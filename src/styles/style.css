@@ -1,0 +1,169 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #1e272e;
+  font-family: 'Roboto Thin';
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.titulo {
+  font-size: 45px;
+  position: absolute;
+  margin-top: 200px;
+  color: white;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 25%;
+  float: left;
+  padding: 10px 10px 10px 25px;
+  margin: auto;
+  color: #ff5e57;
+}
+
+.divContato {
+  font-size: 20px;
+  position: absolute;
+  margin-top: 300px;
+  width: 500px;
+  color: white;
+  text-align: justify;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerImg {
+  position: absolute;
+  margin-top: 400px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.imagem {
+  width: 40px;
+  padding: 0 50px 0 50px;
+}
+
+
+.divButton {
+  position: absolute;
+  margin-top: 260px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: #ff5e57;
+  width: 100px;
+  height: 30px;
+  box-shadow: 12px 6px 21px -4px rgba(0,0,0,0.96);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+  color: #ff5e57;
+  transition: 1s;
+}
+
+.divBio {
+  position: absolute;
+  margin-top: 1000px;
+  margin-bottom: 350px;
+  text-align: center;
+  width: 500px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.bio {
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+
+@media (max-width: 700px) {
+  .imagem {
+     padding: 0px 30px 0 30px; 
+     transition: 1s;
+  }
+}
+
+@media (max-width: 560px) {
+  .imagem {
+    padding: 0px 20px 0 20px; 
+    transition: 1s;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .titulo {
+    width: 400px;
+    font-size: 30px;
+    text-align: center;
+    transition: 1s;
+  }
+
+  .divContato {
+    width: 400px;
+  }
+
+  .divBio {
+    width: 400px;
+    transition: 1s;
+  }
+}
+
+@media (max-width: 375px) {
+  .imagem {
+    padding: 70px 10px 0 10px; 
+  }
+
+  .divContato {
+    width: 300px;
+    padding: 70px 0 70px 0;
+  }
+
+  .divBio {
+    width: 300px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .titulo {
+    padding-bottom: 50px;
+    font-size: 30px;
+    margin-top: 220px;
+  }
+}
+
+.navItem {
+  display: inline-block;
+  padding: 10px 30px 10px 10px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+};
