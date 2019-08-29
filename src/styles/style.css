@@ -11,6 +11,16 @@ a {
   color: white;
 }
 
+.curriculo {
+  position: absolute;
+  margin-top: 750px;
+  margin-bottom: 70px;
+  width: 900px;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%)
+}
+
 .titulo {
   font-size: 45px;
   position: absolute;
@@ -48,6 +58,17 @@ a {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+.email {
+  border-radius: 10px;
+  padding: 0 15px 0 15px;
+  background: rgba(52, 73, 94, 0.4);
+  font-size: 20px;
+  margin-top: 480px;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 
 .imagem {
   width: 40px;
@@ -61,6 +82,23 @@ a {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.btn-cv {
+  position: absolute;
+  left: 50%;
+  border-right: -50%;
+  margin: 1450px 0 100px 0;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: #ff5e57;
+  width: 100px;
+  height: 30px;
+  box-shadow: 12px 6px 21px -4px rgba(0,0,0,0.96);
+  cursor: pointer;
 }
 
 .btn {
@@ -97,16 +135,70 @@ a {
   font-size: 20px;
 }
 
+.navItem {
+  display: inline-block;
+  padding: 10px 30px 10px 10px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+} 
 
+@media (max-width: 1000px) {
+  .curriculo {
+    margin-top: 650px;
+    width: 800px;
+    transition: 1s;
+  }
 
-@media (max-width: 700px) {
-  .imagem {
-     padding: 0px 30px 0 30px; 
-     transition: 1s;
+  .btn-cv {
+    margin: 1270px 0 100px 0;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 850px) {
+  .curriculo {
+    margin-top: 550px;
+    width: 680px;
+    transition: 1s;
+  }
+
+  .btn-cv {
+    margin: 1090px 0 100px 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .curriculo {
+    margin-top: 500px;
+    width: 590px;
+    transition: 1s;
+  }
+
+  .btn-cv {
+    margin: 970px 0 100px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .curriculo {
+    margin-top: 430px;
+    width: 500px;
+    transition: 1s;
+  }
+
+  .btn-cv {
+    margin: 830px 0 100px 0;
+  }
+}
+
+@media (max-width: 545px) {
+  .navItem {
+    padding: 10px 25px 10px 10px;
+    margin-right: 3px;
+  }
+
   .imagem {
     padding: 0px 20px 0 20px; 
     transition: 1s;
@@ -131,11 +223,31 @@ a {
     width: 400px;
     transition: 1s;
   }
+
+  .curriculo {
+    margin-top: 400px;
+    width: 450px;
+    transition: 1s;
+  }
+
+  .btn-cv {
+    margin: 770px 0 100px 0;
+  }
 }
 
 @media (max-width: 375px) {
+  .navItem {
+    font-size: 15px;
+    padding: 10px 4px 10px 4px;
+    margin-right: 2px;
+  }
+
   .imagem {
-    padding: 70px 10px 0 10px; 
+    padding: 80px 10px 50px 10px; 
+  }
+
+  .btn {
+    font-size: 13px;
   }
 
   .divContato {
@@ -145,6 +257,7 @@ a {
 
   .divBio {
     width: 300px;
+    margin-bottom: 300px;
   }
 
   .logo {
@@ -156,14 +269,18 @@ a {
     font-size: 30px;
     margin-top: 220px;
   }
+
+  .curriculo {
+    margin-top: 320px;
+    width: 350px;
+    transition: 1s;
+  }
+
+  .btn-cv {
+    margin: 600px 0 100px 0;
+  }
 }
 
-.navItem {
-  display: inline-block;
-  padding: 10px 30px 10px 10px;
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-  text-decoration: none;
-  color: white;
-};
+
+
+

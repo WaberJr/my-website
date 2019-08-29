@@ -8,7 +8,10 @@ const Head = () => {
       <h1 className='logo'>Waber Jr.</h1>
       <ul>
         <li className='navItem'>
-          <NavLink to='/contact'>CONTATO</NavLink>
+          <NavLink to='/curriculo'>CURRÍCULO</NavLink>
+        </li>
+        <li className='navItem'>
+          <NavLink to='/contato'>CONTATO</NavLink>
         </li>
         <li className='navItem'>
           <NavLink to='/'>HOME</NavLink>

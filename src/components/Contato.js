@@ -7,6 +7,7 @@ import twitter from '../images/twitter.png';
 import github from '../images/github.png'
 
 import Head from './Head';
+import Imagem from './Imagem';
 
 const Contato = () => {
   return (
@@ -18,12 +19,15 @@ const Contato = () => {
         comigo em qualquer uma das plataformas. Por favor use o E-mail apenas para trabalhos
         profissionais, ou outros assuntos importantes.
       </div>
+      <div className='email'>
+        <p>Email: waberjunior@hotmail.com</p>
+      </div>
       <div className='containerImg'>
-        <a href='https://www.facebook.com/waber.junior' target='_blank' rel='noopener noreferrer'><img className='imagem' alt='' src={facebook}/></a>
-        <a href='https://www.instagram.com/waber_jr/' target='_blank' rel='noopener noreferrer'><img className='imagem' alt='' src={instagram}/></a>
-        <a href='https://www.linkedin.com/in/waberjr/' target='_blank' rel='noopener noreferrer'><img className='imagem' alt='' src={linkedin}/></a>
-        <a href='https://twitter.com/waber_jr' target='_blank' rel='noopener noreferrer'><img className='imagem' alt='' src={twitter}/></a>
-        <a href='https://github.com/WaberJr' target='_blank' rel='noopener noreferrer'><img className='imagem' alt='' src={github}/></a>
+        <Imagem site='https://www.facebook.com/waber.junior' logo={facebook}/>
+        <Imagem site='https://www.instagram.com/waber_jr/' logo={instagram}/>
+        <Imagem site='https://www.linkedin.com/in/waberjr/' logo={linkedin}/>
+        <Imagem site='https://twitter.com/waber_jr' logo={twitter}/>
+        <Imagem site='https://github.com/WaberJr' logo={github}/>
       </div>
     </div>
   )

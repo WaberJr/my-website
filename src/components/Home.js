@@ -10,7 +10,7 @@ const Home = () => {
       behavior: 'smooth' // Aqui eh onde vem toda a magica, ele suporta duas opcoes, o `smooth` e o `normal`
     })
   };
-  let ano
+
   return (
     <div>
       <Head/>
@@ -25,7 +25,7 @@ const Home = () => {
           Meu nome é Waber Júnior, tenho 19 anos e sou apaixonado por tecnologia. No momento estou cursando Ciência
           da Computação na Universidade Paulista UNIP e buscando uma constante evolução com o decorrer do tempo.
         </p>
-        <NavLink to='/contact' ><button className='btn'>Contato</button></NavLink>
+        <NavLink to='/contato' ><button className='btn'>Contato</button></NavLink>
       </div>
     </div>
   )
