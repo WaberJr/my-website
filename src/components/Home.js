@@ -11,6 +11,11 @@ const Home = () => {
     })
   };
 
+  const calcularIdade = () => {
+    var ano = new Date().getFullYear();
+    return ano - 2000;
+  }
+
   return (
     <div>
       <Head/>
@@ -22,7 +27,7 @@ const Home = () => {
       <div className='divBio'>
         <h1 className='hi'>Olá,</h1>
         <p className='bio'>
-          Meu nome é Waber Júnior, tenho 19 anos e sou apaixonado por tecnologia. No momento estou cursando Ciência
+          Meu nome é Waber Júnior, tenho <script>calcularIdade()</script> anos e sou apaixonado por tecnologia. No momento estou cursando Ciência
           da Computação na Universidade Paulista UNIP e buscando uma constante evolução com o decorrer do tempo.
         </p>
         <NavLink to='/contato' ><button className='btn'>Contato</button></NavLink>
